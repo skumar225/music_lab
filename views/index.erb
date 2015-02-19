@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <ul>
+      <% @artist.each do |music| %>
+      <li>
+        <a href="/artists/<%=music.id%>"><%= music.name %></a>
+      </li>
+      <% end %>
+    </ul>
+    <a href="/artist/new">Add new Artist!</a>
+  </body>
+</html>

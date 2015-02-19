@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+  <head><title></title></head>
+  <body>
+    <h1>Edit</h1>
+    <form action="/artists/<%=@artist.id%>" method="POST">
+      <input type="hidden" name="_method" value="PUT">
+      <input type="text" name="artist_name" value="<%=@artist.name%>">
+      <input type="submit" value="Update">
+    </form>
+  </body>
+</html>
